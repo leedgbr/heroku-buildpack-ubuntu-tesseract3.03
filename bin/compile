@@ -1,4 +1,6 @@
 #!/bin/sh
-sudo ln -s /usr/lib/libtesseract.so.3 /usr/lib/libtesseract.so
-sudo mkdir linux-x86-64
-sudo ln -s /usr/lib/libtesseract.so.3 /usr/lib/linux-x86-64/libtesseract.so
+BUILD_DIR=$1
+mkdir $BUILD_DIR/lib
+mkdir $BUILD_DIR/lib/linux-x86-64
+ln -s /usr/lib/libtesseract.so.3 $BUILD_DIR/lib/libtesseract.so
+ln -s /usr/lib/libtesseract.so.3 $BUILD_DIR/lib/linux-x86-64/libtesseract.so
