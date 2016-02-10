@@ -1,2 +1,3 @@
 #!/bin/sh
+echo "Tesseract 3.0.3 PostInstall for Ubuntu"
 exit 0
